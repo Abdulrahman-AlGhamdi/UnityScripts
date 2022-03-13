@@ -53,6 +53,7 @@ sysinfo.txt
 
 # Unity
 UserSettings/
+.idea/
 
 # Builds
 *.apk
