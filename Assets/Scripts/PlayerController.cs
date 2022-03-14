@@ -12,13 +12,13 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Update() {
-        _xInput = Input.GetAxis("Horizontal");
-        _zInput = Input.GetAxis("Vertical");
-
         KeyboardMovement();
     }
 
     private void KeyboardMovement() {
+        _xInput = Input.GetAxis("Horizontal");
+        _zInput = Input.GetAxis("Vertical");
+
         var xVelocity = _xInput * moveSpeed;
         var zVelocity = _zInput * moveSpeed;
 
